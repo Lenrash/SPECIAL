@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fallout"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -15,260 +16,238 @@
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="horizontal">
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="140dp"
-                android:layout_height="wrap_content"
-                android:text="@string/strength"
-                android:textSize="@dimen/font"
-                android:textStyle="bold" />
-
-            <Button
-                android:layout_width="@dimen/botons"
-                android:layout_height="@dimen/botons"
-                android:text="+" />
-
-            <Button
-                android:layout_width="@dimen/botons"
-                android:layout_height="@dimen/botons"
-                android:text="-" />
+            android:layout_width="150dp"
+            android:layout_height="280dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/pointsleft" />
+                android:layout_height="40dp"
+                android:text="@string/strength"
+                android:textSize="@dimen/font"
 
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="140dp"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:text="@string/perception"
                 android:textSize="@dimen/font"
                 android:textStyle="bold" />
 
-            <Button
-                android:layout_width="@dimen/botons"
-                android:layout_height="@dimen/botons"
-                android:text="+" />
-
-            <Button
-                android:layout_width="@dimen/botons"
-                android:layout_height="@dimen/botons"
-                android:text="-" />
-
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
             <TextView
                 android:layout_width="140dp"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:text="@string/endurance"
                 android:textSize="@dimen/font"
                 android:textStyle="bold" />
 
-            <Button
-                android:layout_width="@dimen/botons"
-                android:layout_height="@dimen/botons"
-                android:text="+" />
-
-            <Button
-                android:layout_width="@dimen/botons"
-                android:layout_height="@dimen/botons"
-                android:text="-" />
-
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
             <TextView
                 android:layout_width="140dp"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:text="@string/charisma"
                 android:textSize="@dimen/font"
                 android:textStyle="bold" />
 
-            <Button
-                android:layout_width="@dimen/botons"
-                android:layout_height="@dimen/botons"
-                android:text="+" />
-
-            <Button
-                android:layout_width="@dimen/botons"
-                android:layout_height="@dimen/botons"
-                android:text="-" />
-
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
             <TextView
                 android:layout_width="140dp"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:text="@string/intelligence"
                 android:textSize="@dimen/font"
                 android:textStyle="bold" />
 
-            <Button
-                android:layout_width="@dimen/botons"
-                android:layout_height="@dimen/botons"
-                android:text="+" />
-
-            <Button
-                android:layout_width="@dimen/botons"
-                android:layout_height="@dimen/botons"
-                android:text="-" />
-
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
             <TextView
                 android:layout_width="140dp"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:text="@string/agility"
                 android:textSize="@dimen/font"
                 android:textStyle="bold" />
 
-            <Button
-                android:layout_width="@dimen/botons"
-                android:layout_height="@dimen/botons"
-                android:text="+" />
-
-            <Button
-                android:layout_width="@dimen/botons"
-                android:layout_height="@dimen/botons"
-                android:text="-" />
-
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
             <TextView
                 android:layout_width="140dp"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:text="@string/luck"
                 android:textSize="@dimen/font"
                 android:textStyle="bold" />
 
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
             <Button
                 android:layout_width="@dimen/botons"
                 android:layout_height="@dimen/botons"
-                android:text="+" />
+                android:text="@string/btnminus" />
 
             <Button
                 android:layout_width="@dimen/botons"
                 android:layout_height="@dimen/botons"
-                android:text="-" />
+                android:text="@string/btnminus" />
 
+            <Button
+                android:layout_width="@dimen/botons"
+                android:layout_height="@dimen/botons"
+                android:text="@string/btnminus" />
+
+            <Button
+                android:layout_width="@dimen/botons"
+                android:layout_height="@dimen/botons"
+                android:text="@string/btnminus" />
+
+            <Button
+                android:layout_width="@dimen/botons"
+                android:layout_height="@dimen/botons"
+                android:text="@string/btnminus" />
+
+            <Button
+                android:layout_width="@dimen/botons"
+                android:layout_height="@dimen/botons"
+                android:text="@string/btnminus" />
+
+            <Button
+                android:layout_width="@dimen/botons"
+                android:layout_height="@dimen/botons"
+                android:text="@string/btnminus" />
 
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:layout_width="75dp"
-                android:layout_height="wrap_content"
-                android:text="Name" />
-
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:background="@drawable/white"
-                android:textColor="@color/black"
-                android:inputType="text" />
-
-        </LinearLayout>
-
-
-        <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="40dp"
             android:layout_height="wrap_content"
-            android:text="GENDER" />
+            android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="@dimen/botons"
+                android:layout_height="@dimen/botons"
+                android:text="@string/btnplus" />
 
-            <RadioGroup
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+            <Button
+                android:layout_width="@dimen/botons"
+                android:layout_height="@dimen/botons"
+                android:text="@string/btnplus" />
 
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Male" />
+            <Button
+                android:layout_width="@dimen/botons"
+                android:layout_height="@dimen/botons"
+                android:text="@string/btnplus" />
 
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Female" />
+            <Button
+                android:layout_width="@dimen/botons"
+                android:layout_height="@dimen/botons"
+                android:text="@string/btnplus" />
 
-            </RadioGroup>
+            <Button
+                android:layout_width="@dimen/botons"
+                android:layout_height="@dimen/botons"
+                android:text="@string/btnplus" />
+
+            <Button
+                android:layout_width="@dimen/botons"
+                android:layout_height="@dimen/botons"
+                android:text="@string/btnplus" />
+
+            <Button
+                android:layout_width="@dimen/botons"
+                android:layout_height="@dimen/botons"
+                android:text="@string/btnplus" />
 
         </LinearLayout>
 
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="PERK SELECTION" />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Rifleman" />
-
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Barter" />
-
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Medic" />
-        </LinearLayout>
 
     </LinearLayout>
 
-</RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textSize="@dimen/font"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="246dp"
+            android:layout_height="30dp"
+            android:background="@drawable/white"
+            android:inputType="text|textCapWords"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/gender"
+            android:textSize="@dimen/font"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/perk"
+        android:textSize="@dimen/font"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rifleman" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Barter" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medic" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View"/>
+
+</LinearLayout>
