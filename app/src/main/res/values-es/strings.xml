@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SPECIAL</string>
+
+    <string name="strength">FUERZA: </string>
+    <string name="perception">PERCEPCION: </string>
+    <string name="endurance">RESISTENCIA: </string>
+    <string name="charisma">CARISMA: </string>
+    <string name="intelligence">INTELIGENCIA: </string>
+    <string name="agility">AGILIDAD: </string>
+    <string name="luck">SUERTE: </string>
+
+    <string name="name">NOMBRE: </string>
+    <string name="gender">SEXO: </string>
+    <string name="male">Hombre</string>
+    <string name="female">Mujer</string>
+    <string name="perk">HABILIDADES: </string>
+    <string name="rifleman">Soldado</string>
+    <string name="barter">Comerciante</string>
+    <string name="medic">Medico</string>
+    <string name="pointsleft">PUNTOS RESTANTES: </string>
+    <string name="summary">Resumen</string>
+
+
+</resources>

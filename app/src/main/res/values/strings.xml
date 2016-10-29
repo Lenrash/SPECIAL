@@ -13,9 +13,14 @@
 
     <string name="name">NAME: </string>
     <string name="gender">GENDER: </string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
     <string name="perk">PERK SELECTION: </string>
+    <string name="rifleman">Rifleman</string>
+    <string name="barter">Barter</string>
+    <string name="medic">Medic</string>
     <string name="pointsleft">POINTS LEFT: </string>
-
+    <string name="summary">View Summary</string>
 
 
 </resources>

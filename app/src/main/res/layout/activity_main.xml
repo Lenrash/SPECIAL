@@ -19,57 +19,63 @@
         android:orientation="horizontal">
 
         <LinearLayout
-            android:layout_width="150dp"
-            android:layout_height="280dp"
+            android:layout_width="175dp"
+            android:layout_height="250dp"
             android:layout_marginTop="8dp"
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="40dp"
+                android:id="@+id/text_strenght"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ancho_texto"
                 android:text="@string/strength"
                 android:textSize="@dimen/font"
-
                 android:textStyle="bold" />
 
             <TextView
-                android:layout_width="140dp"
-                android:layout_height="40dp"
+                android:id="@+id/text_perception"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ancho_texto"
                 android:text="@string/perception"
                 android:textSize="@dimen/font"
                 android:textStyle="bold" />
 
             <TextView
-                android:layout_width="140dp"
-                android:layout_height="40dp"
+                android:id="@+id/text_endurance"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ancho_texto"
                 android:text="@string/endurance"
                 android:textSize="@dimen/font"
                 android:textStyle="bold" />
 
             <TextView
-                android:layout_width="140dp"
-                android:layout_height="40dp"
+                android:id="@+id/text_charisma"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ancho_texto"
                 android:text="@string/charisma"
                 android:textSize="@dimen/font"
                 android:textStyle="bold" />
 
             <TextView
-                android:layout_width="140dp"
-                android:layout_height="40dp"
+                android:id="@+id/text_intelligence"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ancho_texto"
                 android:text="@string/intelligence"
                 android:textSize="@dimen/font"
                 android:textStyle="bold" />
 
             <TextView
-                android:layout_width="140dp"
-                android:layout_height="40dp"
+                android:id="@+id/text_agility"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ancho_texto"
                 android:text="@string/agility"
                 android:textSize="@dimen/font"
                 android:textStyle="bold" />
 
             <TextView
-                android:layout_width="140dp"
-                android:layout_height="40dp"
+                android:id="@+id/text_luck"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ancho_texto"
                 android:text="@string/luck"
                 android:textSize="@dimen/font"
                 android:textStyle="bold" />
@@ -82,38 +88,52 @@
             android:orientation="vertical">
 
             <Button
+                android:id="@+id/bminus_str"
                 android:layout_width="@dimen/botons"
                 android:layout_height="@dimen/botons"
+                android:textSize="@dimen/text_size"
                 android:text="@string/btnminus" />
 
             <Button
+                android:id="@+id/bminus_perc"
                 android:layout_width="@dimen/botons"
                 android:layout_height="@dimen/botons"
+                android:textSize="@dimen/text_size"
                 android:text="@string/btnminus" />
 
             <Button
+                android:id="@+id/bminus_endur"
                 android:layout_width="@dimen/botons"
                 android:layout_height="@dimen/botons"
+                android:textSize="@dimen/text_size"
                 android:text="@string/btnminus" />
 
             <Button
+                android:id="@+id/bminus_char"
                 android:layout_width="@dimen/botons"
                 android:layout_height="@dimen/botons"
+                android:textSize="@dimen/text_size"
                 android:text="@string/btnminus" />
 
             <Button
+                android:id="@+id/bminus_int"
                 android:layout_width="@dimen/botons"
                 android:layout_height="@dimen/botons"
+                android:textSize="@dimen/text_size"
                 android:text="@string/btnminus" />
 
             <Button
+                android:id="@+id/bminus_agi"
                 android:layout_width="@dimen/botons"
                 android:layout_height="@dimen/botons"
+                android:textSize="@dimen/text_size"
                 android:text="@string/btnminus" />
 
             <Button
+                android:id="@+id/bminus_luck"
                 android:layout_width="@dimen/botons"
                 android:layout_height="@dimen/botons"
+                android:textSize="@dimen/text_size"
                 android:text="@string/btnminus" />
 
         </LinearLayout>
@@ -124,41 +144,61 @@
             android:orientation="vertical">
 
             <Button
+                android:id="@+id/bplus_str"
                 android:layout_width="@dimen/botons"
                 android:layout_height="@dimen/botons"
+                android:textSize="@dimen/text_size"
                 android:text="@string/btnplus" />
 
             <Button
+                android:id="@+id/bplus_perc"
                 android:layout_width="@dimen/botons"
                 android:layout_height="@dimen/botons"
+                android:textSize="@dimen/text_size"
                 android:text="@string/btnplus" />
 
             <Button
+                android:id="@+id/bplus_endur"
                 android:layout_width="@dimen/botons"
                 android:layout_height="@dimen/botons"
+                android:textSize="@dimen/text_size"
                 android:text="@string/btnplus" />
 
             <Button
+                android:id="@+id/bplus_char"
                 android:layout_width="@dimen/botons"
                 android:layout_height="@dimen/botons"
+                android:textSize="@dimen/text_size"
                 android:text="@string/btnplus" />
 
             <Button
+                android:id="@+id/bplus_int"
                 android:layout_width="@dimen/botons"
                 android:layout_height="@dimen/botons"
+                android:textSize="@dimen/text_size"
                 android:text="@string/btnplus" />
 
             <Button
+                android:id="@+id/bplus_agi"
                 android:layout_width="@dimen/botons"
                 android:layout_height="@dimen/botons"
+                android:textSize="@dimen/text_size"
                 android:text="@string/btnplus" />
 
             <Button
+                android:id="@+id/bplus_luck"
                 android:layout_width="@dimen/botons"
                 android:layout_height="@dimen/botons"
+                android:textSize="@dimen/text_size"
                 android:text="@string/btnplus" />
 
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/points_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pointsleft"/>
 
 
     </LinearLayout>
@@ -168,13 +208,14 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:layout_width="75dp"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:text="@string/name"
             android:textSize="@dimen/font"
             android:textStyle="bold" />
 
         <EditText
+            android:id="@+id/text_name"
             android:layout_width="246dp"
             android:layout_height="30dp"
             android:background="@drawable/white"
@@ -202,14 +243,14 @@
             android:orientation="horizontal">
 
             <RadioButton
-                android:layout_width="wrap_content"
+                android:layout_width="80dp"
                 android:layout_height="wrap_content"
-                android:text="Male" />
+                android:text="@string/male" />
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Female" />
+                android:text="@string/female" />
 
         </RadioGroup>
 
@@ -220,6 +261,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/perk"
+        android:layout_marginTop="8dp"
         android:textSize="@dimen/font"
         android:textStyle="bold" />
 
@@ -230,24 +272,26 @@
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Rifleman" />
+            android:text="@string/rifleman" />
 
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Barter" />
+            android:text="@string/barter" />
 
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Medic" />
+            android:text="@string/medic" />
 
 
     </LinearLayout>
 
     <Button
-        android:layout_width="wrap_content"
+        android:id="@+id/summary"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:text="View"/>
+        android:layout_marginLeft="30dp"
+        android:text="@string/summary"/>
 
 </LinearLayout>
