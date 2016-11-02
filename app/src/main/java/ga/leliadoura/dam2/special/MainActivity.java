@@ -6,7 +6,11 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.RadioButton;
 import android.widget.TextView;
+
+import java.nio.charset.CharacterCodingException;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -20,16 +24,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private int agility = 1;
     private int luck = 1;
 
-    private String name;
-    private String gender;
-    private String[] perks;
+    private String name, gender, rifleman, barter, medic;
 
     private Button[] bplus = new Button[7];
     private Button[] bminus = new Button[7];
     private Button summary;
     private TextView[] tview = new TextView[7];
-    private TextView pointL;
-    private TextView textname;
+    private TextView pointL, textname;
+    private RadioButton rbmale, rbfemale;
+    private CheckBox cb_rifleman, cb_barter, cb_medic;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -107,6 +110,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         pointL = (TextView) findViewById(R.id.points_left);
         textname = (TextView) findViewById(R.id.text_name);
+
+        rbmale = (RadioButton) findViewById(R.id.radio_male);
+        rbfemale = (RadioButton) findViewById(R.id.radio_female);
+
+        cb_rifleman = (CheckBox) findViewById(R.id.check_rifleman);
+        cb_barter = (CheckBox) findViewById(R.id.check_barter);
+        cb_medic = (CheckBox) findViewById(R.id.check_medic);
     }
 
     private void buttonMinusPressed(View v){
@@ -258,7 +268,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private Intent intentForSummary(){
         Intent intent = new Intent(this, Summary.class);
-        intent.putExtra("strenght", strength);
+
+        intent.putExtra("strength", strength);
         intent.putExtra("perception", perception);
         intent.putExtra("endurance", endurance);
         intent.putExtra("charisma", charisma);
@@ -269,10 +280,36 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         name = String.valueOf(textname.getText());
         intent.putExtra("name", name);
 
+        asignGender();
+        intent.putExtra("gender", gender);
+
 
         return intent;
     }
 
+    private void asignGender(){
+        if(rbmale.isChecked())
+            gender = String.valueOf(rbmale.getText());
+        if(rbfemale.isChecked())
+            gender = String.valueOf(rbfemale.getText());
+    }
+
+    private void checkPerks(){
+        if (cb_rifleman.isChecked()) {
+            rifleman = String.valueOf(cb_rifleman.getText());
+
+        }
+        if (cb_barter.isChecked()){
+            barter = String.valueOf(cb_barter.getText());
+
+        }
+        if (cb_medic.isChecked()){
+            medic = String.valueOf(cb_medic.getText());
+
+        }
+
+
+    }
 
 }
 
