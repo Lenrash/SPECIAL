@@ -41,7 +41,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         inicializar();
         refreshText();
-
     }
 
 
@@ -283,6 +282,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         asignGender();
         intent.putExtra("gender", gender);
 
+        checkPerks();
+
+        intent.putExtra("rifleman", rifleman);
+        intent.putExtra("barter", barter);
+        intent.putExtra("medic", medic);
 
         return intent;
     }
@@ -295,19 +299,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void checkPerks(){
+
         if (cb_rifleman.isChecked()) {
-            rifleman = String.valueOf(cb_rifleman.getText());
-
+           rifleman = String.valueOf(cb_rifleman.getText());
         }
+
         if (cb_barter.isChecked()){
-            barter = String.valueOf(cb_barter.getText());
-
+           barter = String.valueOf(cb_barter.getText());
         }
+
         if (cb_medic.isChecked()){
-            medic = String.valueOf(cb_medic.getText());
-
+           medic = String.valueOf(cb_medic.getText());
         }
-
 
     }
 
