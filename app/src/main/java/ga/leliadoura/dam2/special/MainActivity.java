@@ -43,7 +43,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         refreshText();
     }
 
-
     @Override
     public void onClick(View v) {
 
@@ -302,14 +301,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if (cb_rifleman.isChecked()) {
            rifleman = String.valueOf(cb_rifleman.getText());
+        }else{
+            rifleman = "";
         }
 
         if (cb_barter.isChecked()){
            barter = String.valueOf(cb_barter.getText());
+        }else{
+            barter = "";
         }
 
         if (cb_medic.isChecked()){
            medic = String.valueOf(cb_medic.getText());
+        }else{
+            medic = "";
         }
 
     }

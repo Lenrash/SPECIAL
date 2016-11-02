@@ -42,6 +42,11 @@ public class Summary extends AppCompatActivity{
 
         gender = getIntent().getStringExtra("gender");
 
+        rifleman = getIntent().getStringExtra("rifleman");
+        barter = getIntent().getStringExtra("barter");
+        medic = getIntent().getStringExtra("medic");
+
+
     }
 
     private void printData(){
@@ -55,6 +60,9 @@ public class Summary extends AppCompatActivity{
                 + "\n" + getText(R.string.agility) + " " + String.valueOf(agility)
                 + "\n" + getText(R.string.luck) + " " + String.valueOf(luck)
                 + "\n" + getText(R.string.name)+ " " + name
-                + "\n" + getText(R.string.gender)+ " " + gender);
+                + "\n" + getText(R.string.gender)+ " " + gender
+                + "\n" + getText(R.string.perk)
+                + "\n" + rifleman + " " + barter + " " + medic);
+
     }
 }
